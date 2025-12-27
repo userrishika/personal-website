@@ -1,0 +1,222 @@
+/* Global Base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgb(203, 202, 202);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav a:hover{
+   color: blue;
+}
+.menu{
+    display: none;
+}
+
+
+/* home section */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: rgb(198, 191, 191);
+}
+.home-text h1{
+    font-size: 60px;
+}
+.home-text span{
+    color: blue;
+}
+.home-text p{
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.home-image img{
+    margin-top: 0;
+   max-width: 80%;
+   height: auto;
+   border-radius: 10px;
+}
+
+button{
+    padding: 12px 25px;
+    font-size: 20px;
+    background: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* about  */
+.about{
+    text-align: center;
+    padding: 90px 90px;
+    background: rgb(198, 191, 191);
+}
+.about p {
+    font-size: 30px;
+}
+.about h2 {
+    font-size: 60px;
+    padding: 60px;
+    text-decoration: underline;
+    color: grey;
+}
+.about ul {
+    display: inline-block;
+}
+.about ul li{
+    text-align: left;
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+/* services */
+
+.services{
+    background: rgb(198, 191, 191);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2{
+    padding-bottom: 20px;
+    font-size: 60px;
+    text-decoration: underline;
+    color: gray;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.service-card{
+    color: rgb(62, 59, 59);
+    background: gray;
+    text-align: center;
+    padding: 70px 30px;
+    width: 300px;
+    border-radius: 12px;
+}
+.service-card:hover{
+    background: rgb(62, 59, 59);
+    color: gray;
+}
+.service h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.service p{
+    font-size: 30px;
+}
+
+/* contact section */
+.contact{
+    background: rgb(198, 191, 191);
+    text-align: center;
+    padding: 70px 30px;
+}
+.contact h2{
+    padding-bottom: 20px;
+    font-size: 60px;
+    text-decoration: underline;
+    color: gray
+}
+form{
+    margin: 40px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 20px;
+    padding: 10px;
+    border: gray;
+    border-radius: 6px;
+}
+
+/* footer */
+
+footer{
+    background: rgb(198, 191, 191);
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* responsive design */
+
+@media (max-width: 700px) {
+   .menu{
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top:  40px;
+  width: 100%;
+  left: 0;
+  background: rgb(203, 202, 202);
+}
+
+nav.active{
+    display: flex;
+}
+
+/* home secton */
+   .home{
+    flex-direction: column;
+    text-align: center;
+   }
+   .home-text{
+    text-align: center;
+    padding-bottom: 20px;
+   }
+
+   .home-image{
+    text-align: center;
+   }
+
+/* services section    */
+.service{
+    flex-direction: column;
+    align-items: center;
+}
+.service-card{
+    width: 90%;
+}
+}
+Rishika
